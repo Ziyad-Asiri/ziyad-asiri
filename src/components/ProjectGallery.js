@@ -1,7 +1,7 @@
 function ProjectGallery() {
     const images = [
         "/Assets/about.png",
-        "/Assets/ZIYAD MOUSA ASIRI.pdf",
+        "/Assets/ZIYAD_MOUSA_ASIRI.pdf",
         "/Assets/avatar.svg",
         "/Assets/home-main.svg",
         "/Assets/pre.svg",

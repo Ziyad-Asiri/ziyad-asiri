@@ -14,7 +14,7 @@ function ResumeNew() {
   const [width, setWidth] = useState(1200);
   const [isLoading, setIsLoading] = useState(true);
   const [numPages, setNumPages] = useState(null);
-  const pdfFile = process.env.PUBLIC_URL + "/Assets/ZIYAD_MOUSA_ASIRI.pdf";
+  const pdfFile = process.env.PUBLIC_URL + "/Assets/ZiyadCV.pdf";
 
 
   useEffect(() => {
