@@ -3,76 +3,61 @@ import { Container, Row, Spinner } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { Document, Page } from "react-pdf";
+import * as pdfjsLib from "pdfjs-dist";
 
-// تحديد إصدار pdf.js
-pdfjs.GlobalWorkerOptions.workerSrc = 
-  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
-  const [isLoading, setIsLoading] = useState(true);
-  const [numPages, setNumPages] = useState(null);
-  const pdfFile = process.env.PUBLIC_URL + "/Assets/ZiyadCV.pdf";
 
+  const pdfFile = "/Assets/ZiyadCV.pdf";
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setIsLoading(false);
-    setNumPages(numPages);
-  };
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
+        
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdfFile}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+          <Button variant="primary" href={pdfFile} target="_blank" style={{ maxWidth: "250px" }}>
+            <AiOutlineDownload /> &nbsp;Download CV
           </Button>
         </Row>
 
-        <Row className="resume">
+        <Row className="resume d-flex justify-content-center my-4">
           <Document 
             file={pdfFile} 
             className="d-flex justify-content-center"
-            onLoadSuccess={onDocumentLoadSuccess}
-            onLoadError={(error) => console.error("PDF load error:", error)}
+            loading={<Spinner animation="border" variant="primary" />}
           >
-            {isLoading && (
-              <div className="text-center my-4">
-                <Spinner animation="border" variant="primary" />
-                <p className="mt-2">Loading PDF...</p>
-              </div>
-            )}
-            {!isLoading && (
-              <Page 
-                pageNumber={1} 
-                scale={width > 786 ? 1.5 : 0.6}
-              />
-            )}
+            <Page 
+              pageNumber={1} 
+              /* التعديل الجذري هنا:
+                 - في اللابتوب (>786px): نثبت العرض على 800px ليكون أنيقاً وفي المنتصف.
+                 - في الجوال: نجعله يأخذ عرض الشاشة ناقص 40 بكسل (لترك هامش بسيط)، 
+                   وهذا سيجعل الخط كبيراً وواضحاً جداً للقراءة.
+              */
+              width={width > 786 ? 800 : width - 40} 
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+              className="shadow-lg"
+            />
           </Document>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdfFile}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+          <Button variant="primary" href={pdfFile} target="_blank" style={{ maxWidth: "250px" }}>
+            <AiOutlineDownload /> &nbsp;Download CV
           </Button>
         </Row>
       </Container>
