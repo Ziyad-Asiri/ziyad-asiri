@@ -20,18 +20,18 @@ function Projects() {
               imgPath={process.env.PUBLIC_URL + "/Assets/Projects/3.png"}
               isBlog={false}
               title="Exam Management System"
-              description="Developed a platform for managing teachers, students, and exams."
-              demoLink="https://ziyad-laundryservices.wuaze.com/"
+              description="A secure web platform streamlining exam management across three user roles (Admin, Teacher, Student). Includes automated Excel question-bank import and a fully responsive interface."
+              demoLink="https://github.com/Ziyad-Asiri/Exam-Management-System"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={process.env.PUBLIC_URL + "/Assets/Projects/1.png"}
+              imgPath={process.env.PUBLIC_URL + "/Assets/Projects/88.png"}
               isBlog={false}
-              title="laundryservices"
-              description="A practical and efficient web design tailored for a cleaning requests management system. The interface features a clean layout with organized sections for request tracking, staff assignment, and scheduling. It emphasizes simplicity and ease of use, with colors like blue and green to convey professionalism and reliability."
-              demoLink="https://ziyad-laundryservices.wuaze.com/"
+              title="Saudi Stock Market AI Trading Platform"
+              description="An AI-powered platform for predicting Saudi stock trends. Built an end-to-end ML pipeline processing 391K+ price points and developed a custom backtesting engine achieving a 64% win rate and 5.23% return."
+              demoLink="https://github.com/Ziyad-Asiri/StockVision_Demo"
             />
           </Col>
 
@@ -66,10 +66,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={process.env.PUBLIC_URL + "/Assets/Projects/0.png"}
+              imgPath={process.env.PUBLIC_URL + "/Assets/Projects/77.png"}
               isBlog={false}
-              title="Brochure"
-              description="Graphic Design."
+              title="Dashboard"
+              description="An interactive operations dashboard designed for Kingdom Tower's advertising infrastructure. Features 3-tier role-based access control, a maintenance ticket system, and automated data export."
             />
           </Col>
         </Row>

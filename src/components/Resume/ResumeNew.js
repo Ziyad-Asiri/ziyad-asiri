@@ -14,7 +14,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLi
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
-  const pdfFile = "/Assets/ZiyadCV.pdf";
+  const pdfFile = "/Assets/Ziyad.Asiri-CV.pdf";
 
   useEffect(() => {
     setWidth(window.innerWidth);

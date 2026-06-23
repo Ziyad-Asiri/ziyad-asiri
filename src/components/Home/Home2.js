@@ -19,37 +19,16 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> html, Javascript and css. </b>
-              </i>
+              I fell in love with turning complex data into intelligent applications—and I've built the systems to prove it! 🚀
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> 
-                also in areas related to{" "}
-                <b className="purple">
-                  
-                </b>
-              </i>
+              I am highly proficient in core languages like <b className="purple">Python, SQL, and JavaScript</b>, seamlessly bridging the gap between deep data analytics, robust backends, and clean user interfaces.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js </b>
-              </i>
+              My fields of interest are building innovative <b className="purple">AI-driven technologies</b>, conducting advanced <b className="purple">Exploratory Data Analysis (EDA)</b>, and crafting interactive data-driven products that drive strategic decisions.
+              <br />
+              <br />
+              Whenever possible, I apply my passion for developing scalable solutions and automated reporting tools using modern frameworks like <b className="purple">Streamlit, FastAPI, Power BI</b>, and advanced <b className="purple">Generative AI/LLM toolkits</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

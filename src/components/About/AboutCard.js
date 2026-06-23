@@ -11,13 +11,13 @@ function AboutCard() {
         textAlign: "left", // تغيير من justify إلى left لحل مشكلة المسافات
         lineHeight: "1.6"  // إضافة تباعد بسيط بين الأسطر لراحة العين
       }}>
-        Hi Everyone, I am <span className="purple">ZIYAD MOUSA ASIRI </span>
+        Hi Everyone, I am <span className="purple">ZIYAD ASIRI </span>
         from <span className="purple"> Saudi Arabia.</span>
         <br />
         <br />
-        I am a Software Engineer passionate about Artificial Intelligence and developing intelligent systems. In my most recent professional role, I managed the digital operations for the Kingdom Tower screen in Riyadh. During this time, I developed an automated data analysis and incident-tracking system that transformed complex technical data into precise reports, significantly accelerating resolution cycles and decision-making.
-
-Today, I focus my expertise on integrating Generative AI with software engineering, using data analysis as a core pillar for building solutions. Whether I am developing applications powered by Large Language Models (LLMs) or managing model lifecycles via MLOps, my goal is always to turn data into smart, secure, and high-impact digital tools.
+        Software Engineer trained at the SDAIA AI Professionals Bootcamp, with hands-on experience operating the Kingdom
+Tower digital screen and maintaining network sites for STCS. Built a Saudi stock market forecasting model with a 64% win
+rate in backtesting, and design interactive dashboards that turn raw data into clear, decision-ready insights..
       </p>
 
       {/* <p style={{ color: "rgb(155 126 172)", marginTop: "20px" }}>
