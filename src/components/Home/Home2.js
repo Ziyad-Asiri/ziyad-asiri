@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with turning complex data into intelligent applications—and I've built the systems to prove it! 🚀
+              I fell in love with turning complex data into intelligent applications—and I've built the systems to prove it!
               <br />
               <br />
               I am highly proficient in core languages like <b className="purple">Python, SQL, and JavaScript</b>, seamlessly bridging the gap between deep data analytics, robust backends, and clean user interfaces.
@@ -50,7 +50,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Ziyad-Asiri"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -68,17 +68,7 @@ function Home2() {
                 >
                   <FaLinkedinIn />
                 </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=zeyad29011@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillMail />
-                </a>
-              </li>
+              </li>             
             </ul>
           </Col>
         </Row>

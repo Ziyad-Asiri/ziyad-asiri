@@ -15,6 +15,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={process.env.PUBLIC_URL + "/Assets/Projects/97.png"}
+              isBlog={false}
+              title="WHO Air Quality AI Assistant"
+              description="An AI-powered assistant built around the World Health Organization (WHO) Air Quality Guidelines. It uses RAG and Gemini to answer guideline-based questions, analyze air pollution measurements, and generate downloadable reports through an interactive Streamlit interface."
+              demoLink="https://github.com/Ziyad-Asiri/Exam-Management-System"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={process.env.PUBLIC_URL + "/Assets/Projects/3.png"}

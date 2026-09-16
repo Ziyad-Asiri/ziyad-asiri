@@ -15,10 +15,8 @@ function AboutCard() {
         from <span className="purple"> Saudi Arabia.</span>
         <br />
         <br />
-        Software Engineer trained at the SDAIA AI Professionals Bootcamp, with hands-on experience operating the Kingdom
-Tower digital screen and maintaining network sites for STCS. Built a Saudi stock market forecasting model with a 64% win
-rate in backtesting, and design interactive dashboards that turn raw data into clear, decision-ready insights..
-      </p>
+        Software Engineer with hands-on experience across software development, AI, and technical operations. I enjoy building practical solutions, working with data, and solving real-world technical challenges — from developing intelligent applications to supporting large-scale digital systems.
+ </p>
 
       {/* <p style={{ color: "rgb(155 126 172)", marginTop: "20px" }}>
     "Strive to build things that make a difference!"{" "}

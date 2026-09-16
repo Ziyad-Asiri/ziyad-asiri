@@ -90,15 +90,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://wa.me/<966534483940>/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImWhatsapp style={{ marginBottom: "2px" }} /> WhatsApp
-              </Nav.Link>
-            </Nav.Item>
 
           </Nav>
         </Navbar.Collapse>
