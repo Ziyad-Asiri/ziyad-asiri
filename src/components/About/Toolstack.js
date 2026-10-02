@@ -7,7 +7,6 @@ import {
   SiFilezilla,
   SiFigma,
   SiMicrosoftoffice,
-  SiPostman,
   SiDocker,
   SiGit,
 } from "react-icons/si";

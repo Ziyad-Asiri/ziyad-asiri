@@ -1,0 +1,50 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/ZiyadCV.pdf",
+      "destination": "/Assets/Ziyad.Asiri-CV.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/ZiyadCV.pdf",
+      "destination": "/Assets/Ziyad.Asiri-CV.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/97.png",
+      "destination": "/Assets/Projects/who-air-quality-assistant.png",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/3.png",
+      "destination": "/Assets/Projects/exam-management-system.png",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/88.png",
+      "destination": "/Assets/Projects/saudi-stock-ai-platform.png",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/22.png",
+      "destination": "/Assets/Projects/healthy-food-ui.png",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/6.png",
+      "destination": "/Assets/Projects/brochure.png",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/44.png",
+      "destination": "/Assets/Projects/student-expenses-ui.png",
+      "permanent": true
+    },
+    {
+      "source": "/Assets/Projects/77.png",
+      "destination": "/Assets/Projects/kingdom-tower-dashboard.png",
+      "permanent": true
+    }
+  ]
+}

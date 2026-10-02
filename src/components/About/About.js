@@ -1,13 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 
 function About() {
-  // تعريف الصورة بشكل صحيح داخل الدالة
   const laptopImg = process.env.PUBLIC_URL + "/Assets/about.png";
 
   return (
@@ -47,7 +45,7 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }} />
       </Container>
     </Container>
   );
